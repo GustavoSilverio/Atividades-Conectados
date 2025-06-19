@@ -1,0 +1,132 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #F2A922;
+}
+
+/* Custom */
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 16px;
+}
+
+header {
+    background-color: rgba(255, 255, 0, 0.644);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 18px 18px;
+    padding: 20px 144px;
+    gap: 16px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+header img {
+    width: 80px;
+}
+
+.explicacao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    text-align: center;
+    background-color: #bf563fa6;
+    border-radius: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.image-grid img {
+    max-width: none;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 16px;
+}
+
+@media screen and (max-width: 1020px) {
+   .explicacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 32px;
+    }
+
+    header {
+        background-color: rgba(255, 255, 0, 0.644);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 18px 18px;
+        padding: 20px 30px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
